@@ -51,11 +51,11 @@ height: 100vh;">
          
             <!-- right side -->
              <div class="col-sm-5 col-12 mt-sm-5 text-light">
-                <form class="mt-sm-5">
+                <form class="mt-sm-5 " action="login.php" method="post">
                     <h5>Login</h5>
-                    <div class="input-group  mt-3">
-                    <select class="input-group-text">
-                        <option class="active">+91</option>
+                    <div class="input-group mt-3">
+                    <select name="country_code" class="input-group-text">
+                        <option value="+91" selected>+91</option>
                         <option value="+1">+1</option>
                         <option value="+44">+44</option>
                         <option value="+61">+61</option>
@@ -63,10 +63,11 @@ height: 100vh;">
                         <option value="+49">+49</option>
                         <option value="+86">+86</option>
                     </select>
-                    <input type="number" class="form-control  rounded-left-2 " required placeholder="Enter mobile number">
+                    <input type="number" name="mobile_number" class="form-control  rounded-left-2 " required placeholder="Enter mobile number">
                 </div>
-                    <a href="http://127.0.0.1:5500/OTP.html" class="btn btn-primary mt-3 form-control " role="button" aria-required="true"> Continue</a>
-                    <p class="text-end small mt-2">Not registered yet? <a href="#" class=" text-decoration-none " style="color: #EC7100;">Register now. </a></p>
+                    <a href="http://127.0.0.1:5500/OTP.html" class="btn btn-primary mt-3 form-control " type="submit"> Continue</a>
+                    <p class="text-end small mt-2">Not registered yet? <a href="http://127.0.0.1:5500/ragistration.html"
+                    class=" text-decoration-none " style="color: #EC7100;">Register now. </a></p>
 
                 </form>
              </div>
